@@ -1,15 +1,14 @@
 theme: jekyll-theme-chirpy
-lang: ru-RU
+lang: en
 timezone: Europe/Moscow
 
 title: spybull
 tagline: anywhere deep dive 
 
 description: >-
- blog, devOps, linux, unix, dev, programming, c, c++,
- kernel, security, redos, astra, altlinux, gentoo, lfs
+ blog, devOps, linux, unix, dev, programming, c, c++, kernel, security, redos, astra, altlinux, gentoo, lfs
 
-url: "https://spybull.github.io"
+url: 'https://spybull.github.io'
 
 github:
   username: spybull
@@ -18,6 +17,7 @@ social:
   name: spybull
   email: danullbyte@gmail.com
   links:
+    - https://spybull.github.io
 
 google_site_verification:
 google_analytics:

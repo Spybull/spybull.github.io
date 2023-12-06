@@ -4,6 +4,7 @@ date: 2023-12-06 00:00:00 +0300
 categories: [Programming, С]
 tags: [c]
 pin: true
+author: spybull
 ---
 
 ## Настройка окружения
