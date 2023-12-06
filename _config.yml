@@ -1,71 +1,38 @@
-# The Site Configuration
-
-# Import the theme
 theme: jekyll-theme-chirpy
+lang: ru-RU
+timezone: Europe/Moscow
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
-lang: en
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+title: spybull
+tagline: anywhere deep dive 
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
+description: >-
+ blog, devOps, linux, unix, dev, programming, c, c++,
+ kernel, security, redos, astra, altlinux, gentoo, lfs
 
-title: spybull # the main title
-
-tagline: spybull # it will display as the sub-title
-
-description: >- # used by seo meta and the atom feed
- Just blog
-
-# Fill in the protocol & hostname for your site.
-# e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://spybull.github.io"
 
 github:
-  username: spybull # change to your github username
+  username: spybull
 
 twitter:
-  username: NULL # change to your twitter username
+  username: spybull
 
 social:
   name: spybull
   email: danullbyte@gmail.com
   links:
 
-google_site_verification: # fill in to your verification string
-
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
-
+google_site_verification:
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id:
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
-theme_mode: # [light|dark]
 
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added to all image (site avatar & posts' images) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
+theme_mode: 
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://avatars.githubusercontent.com/u/152812785?s=400&u=39d56cc21a73080c459492912c2b450a7c712735&v=4
 
 # boolean type, the global switch for TOC in posts.
 toc: true
