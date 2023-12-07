@@ -44,7 +44,7 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: spybull/spybull.github.io
+    repo: Spybull/spybull.github.io
     repo_id: R_kgDOK2L1hA
     category: General
     category_id: DIC_kwDOK2L1hM4Cbk8a
