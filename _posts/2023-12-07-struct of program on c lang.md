@@ -12,7 +12,7 @@ author: spybull
 В языке Си, код начинает свое выполнение с главной функции, которая называется **main**.  
 Ее **определение** может выглядеть следующим образом:
 
-```
+```c
 int main(void) { /* ... */ }
 int main(int argc, char *argv[]) { /* ... */ }
 ```
@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) { /* ... */ }
 
 Вернемся к программе из вводного урока [hello.c]({% post_url 2023-12-06-introduction to c %}#первая-программа):
 
-```
+```c
 #include <stdio.h>
 
 int main() {
@@ -43,7 +43,7 @@ int main() {
 
 Каждая **инструкция** в языке Cи **ДОЛЖНА** заканчивается ";".  
 Это настолько важно, что если пропустить ее, компилятор вам об этом сообщит:
-```
+```terminal
 root@fedora-develop:~/C# gcc semi_error.c -o semi_error
 semi_error.c: In function ‘main’:
 semi_error.c:4:27: error: expected ‘;’ before ‘return’
@@ -55,7 +55,7 @@ semi_error.c:4:27: error: expected ‘;’ before ‘return’
 ```
 
 Сообщит также и о неоткрытой в начале '{' фигурной скобке:
-```
+```terminal
 semi_error.c: In function ‘main’:
 semi_error.c:4:5: error: expected declaration specifiers before ‘printf’
     4 |     printf("hello, world");
@@ -70,7 +70,7 @@ semi_error.c:7: error: expected ‘{’ at end of input
 ```
 
 Так и о не закрытой в конце:
-```
+```terminal
 root@fedora-develop:~/C# gcc semi_error.c -o semi_error
 semi_error.c: In function ‘main’:
 semi_error.c:5:5: error: expected declaration or statement at end of input
@@ -129,7 +129,7 @@ semi_error.c:5:5: error: expected declaration or statement at end of input
 
 ## Последовательная обработка программы
 
-```
+```c
 #include <stdio.h>
 
 int main() {
@@ -141,7 +141,7 @@ int main() {
 `#include` - ключевое слово для [препроцессора]({% post_url 2023-12-06-introduction to c %}#препроцессинг). [Source file inclusion](https://en.cppreference.com/w/cpp/preprocessor/include)
 
 `<stdio.h>` - это просто файл с объявлениями функций. Данный файл можно легко найти в Linux:
-```
+```terminal
 root@fedora-develop:~/C# find / -name 'stdio.h' 2> /dev/null 
 /usr/include/c++/13/tr1/stdio.h
 /usr/include/bits/stdio.h
@@ -149,7 +149,7 @@ root@fedora-develop:~/C# find / -name 'stdio.h' 2> /dev/null
 ```
 
 Узнать где препроцессор будет искать эти заголовочные файлы можно следующим образом:
-```
+```terminal
 root@fedora-develop:~/C# gcc -E -Wp,-v -
 #include <...> search starts here:
  /usr/lib/gcc/x86_64-redhat-linux/13/include
@@ -193,7 +193,7 @@ root@fedora-develop:~/C# gcc -E -Wp,-v -
 `return 0;` - эта инструкция возвращает значение из функции **main**, в данном примере она вернет свое значение в операционную систему.
 В этом можно легко убедиться и продемонстрировать скомпилировав и запустив тестовую программу [hello.c]({% post_url 2023-12-06-introduction to c %}#первая-программа):
 
-```
+```terminal
 root@fedora-develop:~/C# gcc main.c -o main
 root@fedora-develop:~/C# ./main; echo $?
 Hello world
@@ -203,7 +203,7 @@ Hello world
 **'0'** в контексте завершения работы программы означает ее **успешное завершение**.
 Мы можем также вернуть любое другое значение:
 
-```
+```c
 #include <stdio.h>
 int main(int argc, char* argv[]) {
   printf("Hello world\n");
@@ -212,7 +212,7 @@ int main(int argc, char* argv[]) {
 ```
 
 Проверяем:
-```
+```terminal
 root@fedora-develop:~/C# gcc main.c -o main
 root@fedora-develop:~/C# ./main; echo $?
 Hello world
