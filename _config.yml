@@ -2,8 +2,8 @@ theme: jekyll-theme-chirpy
 lang: ru-RU
 timezone: Europe/Moscow
 
-title: spybull
-tagline: anywhere deep dive 
+title: overcommit
+tagline: system programming
 
 description: >-
  blog, devOps, linux, unix, dev, programming, c, c++, kernel, security, redos, astra, altlinux, gentoo, lfs
@@ -28,7 +28,8 @@ theme_mode:
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://avatars.githubusercontent.com/u/152812785?s=400&u=39d56cc21a73080c459492912c2b450a7c712735&v=4
+avatar: '/assets/img/avatar/overcommit.jpeg'
+#https://avatars.githubusercontent.com/u/152812785?s=400&u=39d56cc21a73080c459492912c2b450a7c712735&v=4
 
 # boolean type, the global switch for TOC in posts.
 toc: true
