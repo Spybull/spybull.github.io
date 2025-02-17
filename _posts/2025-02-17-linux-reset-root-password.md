@@ -55,8 +55,7 @@ switch_root:/# reboot
 ## Сброс через init=/bin/bash
 ### Выбор подходящего ядра
 Загружаемся в систему, выбираем нужное ядро из списка доступных и нажимаем 'e'(edit) для редактирования параметров загрузки ядра.
-![choose_kernel](/assets/img/linux-reset-root-password/
-choose_kernel.png)
+![choose_kernel](/assets/img/linux-reset-root-password/choose_kernel.png)
 _выбор ядра для редактирования параметров_
 
 ### Редактирование параметров ядра
